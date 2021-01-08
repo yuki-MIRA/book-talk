@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  height: 20vh;
+  width: 100vw;
+}
+
+.head_title {
+  color: green;
+  font-size: 50px;
+}
+
+.lists {
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+  padding-left: 50vw;
+}
+
+.sign-up {
+  text-decoration: none;
+  margin-right: 3vw;
+}
+
+.login {
+  text-decoration: none;
+  margin-right: 3vw;
+}
+
+.logout {
+  text-decoration: none;
+  margin-right: 3vw;
+}
+
+.nickname {
+  text-decoration: none;
+  margin-right: 3vw;
+}

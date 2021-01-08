@@ -1,0 +1,13 @@
+.sign-up-head {
+  height: 10vh;
+  width: 100vw;
+  background-color: #FFEEFF;
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  font-size: 40px;
+  color: green;
+  text-decoration: none;
+}
