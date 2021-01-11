@@ -1,5 +1,13 @@
 <%= render "shared/header" %>
 
-<div class='main-massage'>
+<div class='main'>
   ↓↓↓気になる本をチェックしてみよう♪↓↓↓
+  <div class='book-contents'>
+    <b>新着投稿</b>
+  </div>
 </div>
+
+<%= link_to(new_book_path, class: 'listing-btn') do %>
+  <b><span class='listing-btn-text'>投稿する</span></b>
+  <%= image_tag 'book.png', size: '185x50', class: 'listing-btn-icon' %>
+<% end %>

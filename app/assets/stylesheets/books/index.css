@@ -1,0 +1,31 @@
+.main {
+  height: 10vh;
+}
+
+.book-contents {
+  background-color: yellow;
+  height: 50vh;
+}
+
+.listing-btn {
+  width: 120px;
+  background-color: lightskyblue;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.listing-btn-text {
+  color: white;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.listing-btn-icon {
+  width: 60%;
+}
