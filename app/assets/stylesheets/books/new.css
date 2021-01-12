@@ -1,0 +1,65 @@
+.create-page {
+  height: 100vh;
+  background-color: #FFEEFF;
+}
+
+.create_message {
+  height: 30px;
+  background-color: #FFEEFF;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: solid 1px skyblue;
+}
+
+.books-create {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.books-name {
+  width: 50vw;
+}
+
+.books-text {
+  display: block;
+  width: 50vw;
+  height: 20vh;
+}
+
+.genre_select {
+  height: 5vh;
+  width: 10vw;
+}
+
+.create_str {
+  margin-top: 10px;
+}
+
+.btn-contents {
+  margin-top: 50px;
+  width: 50vw;
+}
+
+.send-btn {
+  height: 4vh;
+  background-color: red;
+  color: white;
+  width: 15vw;
+  margin: 0 200px;
+}
+
+.back-btn {
+  height: 4vh;
+  width: 15vw;
+  border: 1px solid black;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 10px 200px;
+}

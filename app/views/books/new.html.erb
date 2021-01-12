@@ -1,0 +1,32 @@
+<%= render "shared/header2" %>
+
+<div class='create-page'>
+  <div class='create_message'>
+    <b>投稿したい本の情報を入力</b>
+  </div>
+    <div class='books-create'>
+    <%= form_with(model: @book, local: true) do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+      <div class='create-str'>
+        <b>書籍名(必須)</b>
+      </div>
+        <%= f.text_area :name, class:'books-name', placeholder:"書籍名を入力" %>
+      <div class='create_str'>
+        <b>コメント(必須)</b>
+      </div>
+      <%= f.text_area :text, class:'books-text', placeholder:"コメントを入力" %>
+      <div class='create_str'>
+        <b>ジャンル(必須)</b>
+      </div>
+      <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:'genre_select'}) %>
+      <div class='create_str'>
+        <b>書籍画像(必須)</b>
+      </div>
+      <%= f.file_field :image, class:'img-select' %>
+      <div class='btn-contents'>
+        <%= f.submit "投稿する", class:"send-btn"%>
+        <%= link_to '戻る', root_path, class:"back-btn" %>
+      </div>
+    <% end %>
+    </div>
+</div>
