@@ -28,7 +28,7 @@ RSpec.describe Book, type: :model do
       it 'genre_idが空(id:1)だと投稿できない' do
         @book.genre_id = 1
         @book.valid?
-        expect(@book.errors.full_messages).to include("Genre Select")
+        expect(@book.errors.full_messages).to include('Genre Select')
       end
 
       it 'imageが空だと投稿できない' do
