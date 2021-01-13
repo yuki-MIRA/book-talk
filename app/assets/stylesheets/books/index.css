@@ -26,6 +26,7 @@
 
 .list {
   margin: 10px 15px;
+  list-style: none;
 }
 
 .book-img {
