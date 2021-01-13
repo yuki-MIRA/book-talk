@@ -1,12 +1,49 @@
+/* 投稿本一覧ページ */
 .main {
-  height: 10vh;
+  text-align: center;
+}
+
+.new-str {
+  color: orange;
+  font-size: 20px;
 }
 
 .book-contents {
-  background-color: yellow;
-  height: 50vh;
+  height: 80vh;
+  position: relative;
+
 }
 
+.book-lists {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #FFEEFF;
+}
+
+.list {
+  margin: 10px 15px;
+}
+
+.book-img {
+  width: 28vh;
+  height: 28vh;
+}
+
+.book-info {
+  border: solid 1px lightslategray;
+  color: black;
+}
+
+.new-link {
+  text-decoration: none;
+}
+
+
+/* 投稿ボタン */
 .listing-btn {
   width: 120px;
   background-color: lightskyblue;
@@ -29,3 +66,4 @@
 .listing-btn-icon {
   width: 60%;
 }
+
