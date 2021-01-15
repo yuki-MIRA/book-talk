@@ -1,0 +1,64 @@
+.book-show {
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFEEFF;
+  position: relative;
+}
+
+.book-box {
+  height: 60vh;
+  width: 100vh;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-top: solid 2px skyblue;
+}
+
+.comment-box {
+  height: 40vh;
+  width: 100vh;
+  background-color: violet;
+  position: absolute;
+  top: 60vh;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* 本情報 */
+.book-index {
+  text-align: center;
+}
+
+.show-img {
+  width: 35vh;
+  height: 35vh;
+}
+
+.book-show-name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.book-show-text {
+  width: 50vw;
+  height: 13vh;
+  padding: 10px 10px;
+  border: solid 1px black;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-show-genre {
+  width: 100px;
+  padding: 5px 5px;
+  border: solid 1px black;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 2vw;
+  background-color: yellow;
+}

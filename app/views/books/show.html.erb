@@ -1,0 +1,22 @@
+<%= render "shared/header2" %>
+
+<div class='book-show'>
+  <div class='book-box'>
+    <div class='book-index'>
+      <div class='book-show-genre'>
+        <b><%= @book.genre.name %></b>
+      </div>
+      <div class='book-show-name'>
+        <b><%= @book.name %></b>
+      </div>
+      <div class='book-show-image'>
+        <%= image_tag @book.image, class:'show-img' %>
+      </div>
+      <div class='book-show-text'>
+        <%= @book.text %>
+      </div>
+    <div>
+  </div>
+  <div class='comment-box'>
+  </div>
+</div>
