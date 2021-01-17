@@ -62,3 +62,15 @@
   left: 2vw;
   background-color: yellow;
 }
+
+/* 編集ボタン */
+.edit-btn {
+  position: absolute;
+  right: 25px;
+  width: 50px;
+  text-decoration: none;
+  padding: 5px;
+  border: solid 1px black;
+  background-color: lightblue;
+}
+/* 削除ボタン */
