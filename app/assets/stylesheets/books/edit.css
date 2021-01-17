@@ -1,0 +1,68 @@
+.book-edit {
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFEEFF;
+}
+
+.edit-box {
+  height: 95vh;
+  width: 60vw;
+  background-color: white;
+  border-top: solid 2px lightblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit-top-str {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.edit-form {
+  height: 70vh;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.edit-str {
+  margin-top: 5px;
+}
+
+.edit-books-name {
+  width: 25vw;
+}
+
+.edit-books-text {
+  height: 20vh;
+  width: 40vw;
+}
+
+.edit-btn-contents {
+  width: 20vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.edit-send-btn {
+  width: 20vw;
+  height: 30px;
+  background-color: red;
+  margin-bottom: 15px;
+}
+
+.edit-back-btn {
+  text-decoration: none;
+  display: block;
+  border: solid 1px black;
+  width: 20vw;
+  text-align: center;
+  background-color:lightgrey;
+  color: black;
+}
