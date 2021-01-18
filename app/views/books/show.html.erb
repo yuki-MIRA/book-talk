@@ -6,11 +6,9 @@
       <% if user_signed_in? %>
         <% if current_user.id == @book.user_id %>
           <b><%= link_to '編集', edit_book_path(@book.id), class: 'edit-btn' %><b>
+          <b><%= link_to '削除', book_path(@book.id), method: :delete, data: {confirm: "本当に削除しますか？"}, class: 'delete-btn' %><b>
         <% end %>
       <% end %>
-      <%# <div class='delete-btn'>
-        <b>削除</b>
-      </div> %>
       <div class='book-show-genre'>
         <b><%= @book.genre.name %></b>
       </div>

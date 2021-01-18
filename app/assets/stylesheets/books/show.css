@@ -74,3 +74,13 @@
   background-color: lightblue;
 }
 /* 削除ボタン */
+.delete-btn {
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  width: 50px;
+  text-decoration: none;
+  padding: 5px;
+  border: solid 1px black;
+  background-color: red;
+}
