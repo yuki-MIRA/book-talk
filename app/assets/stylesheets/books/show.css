@@ -7,24 +7,13 @@
 
 .book-box {
   height: 60vh;
-  width: 100vh;
+  width: 60vw;
   background-color: white;
   position: absolute;
   right: 0;
   left: 0;
   margin: auto;
   border-top: solid 2px skyblue;
-}
-
-.comment-box {
-  height: 40vh;
-  width: 100vh;
-  background-color: violet;
-  position: absolute;
-  top: 60vh;
-  right: 0;
-  left: 0;
-  margin: auto;
 }
 
 /* 本情報 */
@@ -83,4 +72,63 @@
   padding: 5px;
   border: solid 1px black;
   background-color: red;
+}
+
+/* コメントフォーム */
+.comment-box {
+  height: 40vh;
+  width: 60vw;
+  background-color: white;
+  position: absolute;
+  top: 60vh;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.comment-form {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 6px auto;
+  height: 23vh;
+  width: 40vw;
+  border: solid 1px black;
+  border-radius: 6%;
+  background-color:lightyellow;
+}
+
+.comment-text {
+  margin-top: 30px;
+  height: 10vh;
+  width: 30vw;
+}
+
+.comment-btn {
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 15vw;
+}
+
+/* コメント一覧 */
+.comment-top {
+  border-bottom: double black;
+  color: green;
+}
+
+.comment-index {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 25vh auto;
+  height: 20vh;
+  width: 60vw;
+  background-color: white;
+}
+
+.comment-login {
+  margin-top: 9vh;
 }

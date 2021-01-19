@@ -24,5 +24,32 @@
     <div>
   </div>
   <div class='comment-box'>
+    <div class='comment-form'>
+    <% if user_signed_in? %>
+    <%= form_with(model: [@book, @comment], local: true) do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+      <%= f.text_area :text, placeholder: "コメントを入力しよう", class:'comment-text' %>
+      <%= f.submit "コメントする", class:'comment-btn' %>
+      <% end %>
+    <% else %>
+      <div class='comment-login'>
+        <b>△コメント投稿にはログインが必要です△</b>
+      </div>
+    <% end %>
+    </div>
+    <div class='comment-index'>
+      <div class='comment-top'>
+        <b><p>〜コメント一覧〜<p></b>
+      </div>
+      <% @comments.each do |comment| %>
+        <p>
+          <%= comment.user.nickname %>：
+          <%= comment.text %>
+          <p>
+          （<%= comment.created_at %>）に投稿//
+          </p>
+        </p>
+      <% end %>
+    </div>
   </div>
 </div>
