@@ -1,0 +1,31 @@
+<%= render "shared/header" %>
+
+<%= link_to 'トップページへ戻る', root_path, class: 'move-top' %>
+<div class='search-top'>
+  <div class='search-str'>
+    ジャンル検索結果
+  </div>
+  <% if @results.length != 0 %>
+    <ul class='search-index'>
+      <% @results.each do |book| %>
+        <li class='search-list'>
+          <%= link_to book_path(book.id), class:'new-link' do %>
+          <%= image_tag book.image, class: "book-img" %>
+          <div class='search-info'>
+            <div class='search-name'>
+              <%= book.name %>
+            </div>
+            <div class='search-genre'>
+              <%= book.genre.name %>
+            </div>
+          </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <div class='search-nil-message'>
+      該当する投稿がありませんでした。
+    </div>
+  <% end %>
+</div>

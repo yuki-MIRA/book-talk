@@ -3,6 +3,6 @@ FactoryBot.define do
     association :user
     association :book
 
-    text {'テスト投稿'}
+    text { 'テスト投稿' }
   end
 end

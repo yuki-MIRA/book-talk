@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit]
   before_action :move_top, only: :edit
+  before_action :search_book, only: [:index, :search]
 
   def index
     @books = Book.includes(:user).order('created_at DESC')
@@ -18,7 +19,7 @@ class BooksController < ApplicationController
       render :new
     end
   end
-  
+
   def show
     @book = Book.find(params[:id])
     @comment = Comment.new
@@ -36,6 +37,7 @@ class BooksController < ApplicationController
     else
       render :edit
     end
+  end
 
   def destroy
     @book = Book.find(params[:id])
@@ -43,6 +45,8 @@ class BooksController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+    @results = @p.result
   end
 
   private
@@ -53,9 +57,10 @@ class BooksController < ApplicationController
 
   def move_top
     @book = Book.find(params[:id])
-    unless current_user.id == @book.user_id
-      redirect_to root_path
-    end
+    redirect_to root_path unless current_user.id == @book.user_id
   end
 
+  def search_book
+    @p = Book.ransack(params[:q])
+  end
 end

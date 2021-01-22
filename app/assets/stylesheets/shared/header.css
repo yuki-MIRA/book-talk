@@ -1,21 +1,30 @@
 .header {
   display: flex;
-  height: 20vh;
+  height: 15vh;
+  width: 100vw;
+  background-color: #FFEEFF;
 }
 
-.head_title {
+.head-title {
   color: green;
+  height: 15vh;
+  width: 20vw;
   font-size: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .lists {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   list-style: none;
   font-size: 25px;
-  padding-left: 50vw;
+  width: 50vw;
+  height: 15vh;
 }
 
-.sign-up {
+.sign-up1 {
   text-decoration: none;
   margin-right: 3vw;
 }
@@ -33,4 +42,28 @@
 .nickname {
   text-decoration: none;
   margin-right: 3vw;
+}
+
+/* ジャンル検索フォーム */
+.search-form {
+  height: 15vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+}
+
+.search-text {
+  display: block;
+  font-size: 17px;
+  padding-top: 10px;
+}
+
+.search-select {
+  height: 4vh;
+  width: 15vw;
+}
+
+.search-btn {
+  font-size: 15px;
+  padding: 5px;
 }

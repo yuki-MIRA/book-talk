@@ -1,0 +1,53 @@
+.move-top {
+  display: block;
+  text-decoration: none;
+  background-color: #FFEEFF;
+}
+
+.search-top {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgoldenrodyellow;
+}
+
+.search-str {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-index {
+  height: 90vh;
+  width: 80vw;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.search-list {
+  margin: 20px 20px;
+}
+
+.search-info {
+  border: solid 1px black;
+  width: 18vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+.search-name {
+  color: black;
+}
+
+.search-genre {
+  color: black;
+}
+
+.search-nil-message {
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+  font-size: 20px;
+}
