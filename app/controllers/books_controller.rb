@@ -19,7 +19,7 @@ class BooksController < ApplicationController
       render :new
     end
   end
-  
+
   def show
     @book = Book.find(params[:id])
     @comment = Comment.new
@@ -57,14 +57,10 @@ class BooksController < ApplicationController
 
   def move_top
     @book = Book.find(params[:id])
-    unless current_user.id == @book.user_id
-      redirect_to root_path
-    end
+    redirect_to root_path unless current_user.id == @book.user_id
   end
 
   def search_book
     @p = Book.ransack(params[:q])
   end
-
-
 end
