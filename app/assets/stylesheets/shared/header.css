@@ -12,16 +12,19 @@
   font-size: 50px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  position: relative;
 }
 
 .lists {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
   list-style: none;
   font-size: 25px;
   width: 50vw;
   height: 15vh;
+  position: absolute;
+  left: 700px;
 }
 
 .sign-up1 {
@@ -50,6 +53,10 @@
   width: 30vw;
   display: flex;
   align-items: center;
+  margin-left: 50px;
+  white-space: nowrap;
+  position: absolute;
+  left: 230px;
 }
 
 .search-text {
