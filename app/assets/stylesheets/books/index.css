@@ -1,29 +1,21 @@
 /* 投稿本一覧ページ */
-.main {
-  text-align: center;
-}
-
 .new-str {
+  height: 4vh;
   color: orange;
   font-size: 20px;
   background-color: lightgoldenrodyellow;
   border-bottom: solid 1px orange;
-}
-
-.book-contents {
-  height: 80vh;
-  position: relative;
-
+  text-align: center;
 }
 
 .book-lists {
-  position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: lightgoldenrodyellow;
+  overflow: scroll;
 }
 
 .list {
@@ -32,13 +24,22 @@
 }
 
 .book-img {
-  width: 18vw;
+  width: 20vw;
   height: 28vh;
 }
 
 .book-info {
   border: solid 1px lightslategray;
   color: black;
+  text-align: center;
+}
+
+.book-name {
+  border-bottom: 1px solid black;
+}
+
+.book-genre {
+  border-bottom: 1px solid black;
 }
 
 .new-link {
