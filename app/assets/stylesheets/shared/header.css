@@ -49,13 +49,14 @@
 
 /* ジャンル検索フォーム */
 .search-form {
-  height: 15vh;
+  height: 10vh;
   width: 67vw;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   white-space: nowrap;
   position: absolute;
+  top: 5vh;
   left: 30vw;
 }
 
