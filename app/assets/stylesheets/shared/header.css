@@ -8,7 +8,8 @@
 .head-title {
   color: green;
   height: 15vh;
-  width: 20vw;
+  width: 30vw;
+  margin-left: 10px;
   font-size: 50px;
   display: flex;
   align-items: center;
@@ -19,12 +20,11 @@
 .lists {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
   list-style: none;
   font-size: 25px;
-  width: 50vw;
+  width: 70vw;
   height: 15vh;
-  position: absolute;
-  left: 700px;
 }
 
 .sign-up1 {
@@ -50,13 +50,13 @@
 /* ジャンル検索フォーム */
 .search-form {
   height: 15vh;
-  width: 30vw;
+  width: 67vw;
   display: flex;
-  align-items: center;
-  margin-left: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
   white-space: nowrap;
   position: absolute;
-  left: 230px;
+  left: 30vw;
 }
 
 .search-text {
