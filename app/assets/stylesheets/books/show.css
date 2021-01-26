@@ -6,7 +6,7 @@
 }
 
 .book-box {
-  height: 60vh;
+  height: 35vh;
   width: 60vw;
   background-color: white;
   position: absolute;
@@ -22,8 +22,8 @@
 }
 
 .show-img {
-  width: 35vh;
-  height: 35vh;
+  width: 15vw;
+  height: 18vh;
 }
 
 .book-show-name {
@@ -32,13 +32,13 @@
 }
 
 .book-show-text {
-  width: 50vw;
-  height: 13vh;
+  width: 40vw;
+  height: 7vh;
   padding: 10px 10px;
   border: solid 1px black;
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  overflow: scroll;
 }
 
 .book-show-genre {
@@ -76,11 +76,11 @@
 
 /* コメントフォーム */
 .comment-box {
-  height: 40vh;
+  height: 25vh;
   width: 60vw;
   background-color: white;
   position: absolute;
-  top: 60vh;
+  top: 35vh;
   right: 0;
   left: 0;
   margin: auto;
@@ -90,18 +90,20 @@
   position: absolute;
   right: 0;
   left: 0;
-  margin: 6px auto;
-  height: 23vh;
-  width: 40vw;
+  margin: 0 auto;
+  height: 24vh;
+  width: 50vw;
   border: solid 1px black;
   border-radius: 6%;
   background-color:lightyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .comment-text {
-  margin-top: 30px;
   height: 10vh;
-  width: 30vw;
+  width: 40vw;
 }
 
 .comment-btn {
@@ -124,11 +126,24 @@
   right: 0;
   left: 0;
   margin: 25vh auto;
-  height: 20vh;
+  height: 35vh;
   width: 60vw;
-  background-color: white;
+  background-color:white;
+  overflow: scroll;
 }
 
 .comment-login {
   margin-top: 9vh;
+}
+
+/* フッター */
+.show-footer {
+  position: absolute;
+  top: 95vh;
+  height: 5vh;
+  width: 60vw;
+  background-color: #FFEEFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
