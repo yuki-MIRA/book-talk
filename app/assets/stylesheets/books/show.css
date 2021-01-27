@@ -39,6 +39,8 @@
   margin-left: auto;
   margin-right: auto;
   overflow: scroll;
+  text-align: left;
+  font-weight: bold;
 }
 
 .book-show-genre {
@@ -50,6 +52,15 @@
   top: 8px;
   left: 2vw;
   background-color: yellow;
+}
+
+.book-show-nickname {
+  width: 20vw;
+  text-align: left;
+  position: absolute;
+  top: 20vh;
+  left: 40vw;
+  font-weight: bold;
 }
 
 /* 編集ボタン */
@@ -130,10 +141,11 @@
   width: 60vw;
   background-color:white;
   overflow: scroll;
+  font-weight: bold;
 }
 
 .comment-login {
-  margin-top: 9vh;
+  margin: 0 auto;
 }
 
 /* フッター */
