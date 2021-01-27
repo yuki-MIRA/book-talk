@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
   PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
-  validates_format_of :password, with: PASSWORD_REGEX, message: 'には英字と数字の両方を含める必要があります'
+  validates_format_of :password, with: PASSWORD_REGEX, message: 'には英字と数字の組合せが必要です'
 
   has_many :books
   has_many :comments

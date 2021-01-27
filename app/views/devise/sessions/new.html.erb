@@ -4,23 +4,29 @@
   <div class='form'>
     <div class='form-text'>
        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-       <div class='str'><b>メンバー情報入力</b></div>
+       <div class='str'><b>メンバー情報入力</b>
+       </div>
+       <div class="login-index">
          <div class='login-flash-message'>
            <%= flash[:notice] %>
            <%= flash[:alert] %>
          </div>
          <div class="field">
            <%= f.label :"メールアドレス" %><br />
-           <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "login-email" %>
          </div>
          <div class="field">
            <%= f.label :"パスワード" %><br />
-           <%= f.password_field :password, autocomplete: "current-password" %>
+           <%= f.password_field :password, autocomplete: "current-password", class: "login-password" %>
          </div>
          <div class="actions">
-           <%= f.submit "ログイン" %>
+           <%= f.submit "ログイン", class: "login-btn" %>
+           <%= link_to '戻る', root_path, class:"login-back-btn" %>
          </div>
-      <% end %>
+       <% end %>
+       </div>
     </div>
   </div>
 </div>
+
+<%= render "shared/footer"%>
