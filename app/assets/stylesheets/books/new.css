@@ -1,5 +1,5 @@
 .create-page {
-  height: 100vh;
+  height: 84vh;
   background-color: #FFEEFF;
 }
 
@@ -27,7 +27,7 @@
 .books-text {
   display: block;
   width: 50vw;
-  height: 20vh;
+  height: 10vh;
 }
 
 .genre_select {
