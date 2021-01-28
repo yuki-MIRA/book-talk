@@ -1,11 +1,11 @@
 .book-edit {
-  height: 100vh;
+  height: 84vh;
   width: 100vw;
   background-color: #FFEEFF;
 }
 
 .edit-box {
-  height: 95vh;
+  height: 83vh;
   width: 60vw;
   background-color: white;
   border-top: solid 2px lightblue;
@@ -47,7 +47,7 @@
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .edit-send-btn {
