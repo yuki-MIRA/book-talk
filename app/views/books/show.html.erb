@@ -46,6 +46,11 @@
       </div>
       <% @comments.each do |comment| %>
         <p>
+        <% if user_signed_in? %>
+          <% if current_user.id == comment.user_id %>
+            <p><%= link_to '削除', book_comment_path(comment.book.id, comment.id), method: :delete, data: {confirm: "本当に削除しますか？"}, class:'comment-delete-btn' %></p>
+          <% end %>
+        <% end %>
           <%= comment.user.nickname %>：
           <%= comment.text %>
           <p>

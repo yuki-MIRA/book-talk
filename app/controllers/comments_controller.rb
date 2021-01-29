@@ -10,6 +10,12 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    comment = Comment.find_by(book_id: params[:book_id],id: params[:id])
+    comment.destroy
+    redirect_to book_path(params[:book_id])
+  end
+
   private
 
   def comment_params
