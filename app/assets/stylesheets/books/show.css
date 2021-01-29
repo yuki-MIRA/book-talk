@@ -148,6 +148,15 @@
   margin: 0 auto;
 }
 
+.comment-delete-btn {
+  text-decoration: none;
+  border: solid 1px black;
+  margin-left: 20vw;
+  background-color:blue;
+  color: white;
+  font-size: 18px;
+}
+
 /* フッター */
 .show-footer {
   position: absolute;
