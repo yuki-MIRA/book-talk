@@ -5,7 +5,7 @@
 }
 
 .search-top {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   background-color: lightgoldenrodyellow;
 }
@@ -14,16 +14,20 @@
   text-align: center;
   font-weight: bold;
   font-size: 20px;
+  height: 3vh;
+  padding-top: 1vh;
 }
 
 .search-index {
-  height: 90vh;
+  height: 70vh;
   width: 80vw;
   background-color: white;
-  margin: 0 auto;
+  margin: 2vh auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  overflow: scroll;
 }
 
 .search-list {
@@ -32,7 +36,7 @@
 
 .search-info {
   border: solid 1px black;
-  width: 18vw;
+  width: 20vw;
   text-align: center;
   font-weight: bold;
 }
@@ -42,6 +46,12 @@
 }
 
 .search-genre {
+  color: black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.search-user {
   color: black;
 }
 
