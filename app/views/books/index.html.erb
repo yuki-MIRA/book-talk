@@ -7,14 +7,16 @@
     <%= link_to book_path(book.id), class:'new-link' do %>
     <div class='book-info'>
       <%= image_tag book.image, class: "book-img" %>
-      <div class='book-name'>
-        <%= book.name %>
-      </div>
-      <div class='book-genre'>
-        ◇<%= book.genre.name %>◇
-      </div>
-      <div class='save-user'>
-        by.<%= book.user.nickname %>
+      <div class='book-overview'>
+        <div class='book-name'>
+          <%= book.name %>
+        </div>
+        <div class='book-genre'>
+          ◇<%= book.genre.name %>◇
+        </div>
+        <div class='save-user'>
+          by.<%= book.user.nickname %>
+        </div>
       </div>
     </div>
     <% end %>

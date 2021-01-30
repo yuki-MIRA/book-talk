@@ -29,9 +29,12 @@
 }
 
 .book-info {
-  border: solid 1px lightslategray;
   color: black;
   text-align: center;
+}
+
+.book-overview {
+  border: solid 1px black;
 }
 
 .book-name {
