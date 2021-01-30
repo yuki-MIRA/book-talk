@@ -28,7 +28,10 @@
 
 .book-show-name {
   margin-top: 10px;
+  margin-left: 13vw;
   font-size: 20px;
+  width: 34vw;
+  overflow: scroll;
 }
 
 .book-show-text {
@@ -56,11 +59,13 @@
 
 .book-show-nickname {
   width: 20vw;
+  height: 3vh;
   text-align: left;
   position: absolute;
   top: 20vh;
   left: 40vw;
   font-weight: bold;
+  overflow: scroll;
 }
 
 /* 編集ボタン */
