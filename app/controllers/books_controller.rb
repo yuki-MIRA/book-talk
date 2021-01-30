@@ -2,6 +2,7 @@ class BooksController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit]
   before_action :move_top, only: :edit
   before_action :search_book, only: [:index, :search]
+  before_action :set_params, only: [:show, :edit, :update, :destroy]
 
   def index
     @books = Book.includes(:user).order('created_at DESC')
@@ -21,17 +22,14 @@ class BooksController < ApplicationController
   end
 
   def show
-    @book = Book.find(params[:id])
     @comment = Comment.new
     @comments = @book.comments.includes(:user)
   end
 
   def edit
-    @book = Book.find(params[:id])
   end
 
   def update
-    @book = Book.find(params[:id])
     if @book.update(book_params)
       redirect_to book_path(@book.id)
     else
@@ -40,7 +38,6 @@ class BooksController < ApplicationController
   end
 
   def destroy
-    @book = Book.find(params[:id])
     @book.destroy
     redirect_to root_path
   end
@@ -62,5 +59,9 @@ class BooksController < ApplicationController
 
   def search_book
     @p = Book.ransack(params[:q])
+  end
+
+  def set_params
+    @book = Book.find(params[:id])
   end
 end
