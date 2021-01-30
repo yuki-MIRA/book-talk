@@ -43,6 +43,7 @@
 
 .search-name {
   color: black;
+  overflow: scroll;
 }
 
 .search-genre {
@@ -53,6 +54,7 @@
 
 .search-user {
   color: black;
+  overflow: scroll;
 }
 
 .search-nil-message {
