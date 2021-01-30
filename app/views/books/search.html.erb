@@ -16,7 +16,10 @@
               <%= book.name %>
             </div>
             <div class='search-genre'>
-              <%= book.genre.name %>
+              ◇<%= book.genre.name %>◇
+            </div>
+            <div class='search-user'>
+              by.<%= book.user.nickname %>
             </div>
           </div>
           <% end %>
@@ -29,3 +32,5 @@
     </div>
   <% end %>
 </div>
+
+<%= render "shared/footer"%>
