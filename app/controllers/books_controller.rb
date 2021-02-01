@@ -3,10 +3,10 @@ class BooksController < ApplicationController
   before_action :move_top, only: :edit
   before_action :search_book, only: [:index, :search]
   before_action :set_params, only: [:show, :edit, :update, :destroy]
+  before_action :set_comments, only: [:index, :search]
 
   def index
     @books = Book.includes(:user).order('created_at DESC')
-    @comments = Comment.all
   end
 
   def new
@@ -64,5 +64,9 @@ class BooksController < ApplicationController
 
   def set_params
     @book = Book.find(params[:id])
+  end
+
+  def set_comments
+    @comments = Comment.includes(:book)
   end
 end
