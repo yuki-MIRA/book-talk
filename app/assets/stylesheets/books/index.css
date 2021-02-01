@@ -45,6 +45,14 @@
   border-bottom: 1px solid black;
 }
 
+.save-user {
+  border-bottom: 1px solid black;
+}
+
+.comment-yes {
+  color: red;
+}
+
 .new-link {
   text-decoration: none;
 }
