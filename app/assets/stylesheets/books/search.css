@@ -55,6 +55,11 @@
 .search-user {
   color: black;
   overflow: scroll;
+  border-bottom: solid 1px black;
+}
+
+.comment-no {
+  color: black;
 }
 
 .search-nil-message {

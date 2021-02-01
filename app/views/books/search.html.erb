@@ -21,6 +21,17 @@
             <div class='search-user'>
               by.<%= book.user.nickname %>
             </div>
+            <div class='comment-judge'>
+              <% if @comments.where(book_id: book.id).length == 0 %>
+                <div class='comment-no'>
+                  <%= "コメント投稿(未投稿)" %>
+                </div>
+              <% else %>
+                <div class='comment-yes'>
+                  <%= "コメント投稿(有)!" %>
+                </div>
+              <% end %>
+            </div>
           </div>
           <% end %>
         </li>
