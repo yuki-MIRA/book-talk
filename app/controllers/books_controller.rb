@@ -6,6 +6,7 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.includes(:user).order('created_at DESC')
+    @comments = Comment.all
   end
 
   def new
