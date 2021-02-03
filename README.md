@@ -134,7 +134,7 @@ https://gyazo.com/28e8e573e37318a5f7448d7dcf3d8aad
 ・ユーザーページ表示機能(ユーザー毎の投稿一覧が見れる)  
 
 # データベース設計
-![ER](https://gyazo.com/978609aa90040a2d4cefc8da587b3ae8 "ER")
+https://gyazo.com/5cb14d6176334cd5c8ebc0624dd37e79
 
 # ローカルでの動作方法
 ruby-version
