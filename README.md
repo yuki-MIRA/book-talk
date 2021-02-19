@@ -56,8 +56,8 @@ URLアクセス時、IDとパスワードを求められます。
 ログインページより、登録済のアドレス、パスワードを入力するとログインできます。  
 新規登録ページより、各情報を入力後、登録するボタンをクリックします。  
 登録したユーザーとしてログインし、トップページに遷移されます。  
-[![Image from Gyazo](https://i.gyazo.com/d2662c6dcbb3a0697e4317c09a2a7b8a.gif)](https://gyazo.com/d2662c6dcbb3a0697e4317c09a2a7b8a)  
-[![Image from Gyazo](https://i.gyazo.com/fc7bc3ff91b37385b9173e963fe8c895.gif)](https://gyazo.com/fc7bc3ff91b37385b9173e963fe8c895)  
+[![Image from Gyazo](https://i.gyazo.com/684760628b4f258b302050896484934e.gif)](https://gyazo.com/684760628b4f258b302050896484934e)  
+[![Image from Gyazo](https://i.gyazo.com/a040f62417e7d162d62c7eda02672631.gif)](https://gyazo.com/a040f62417e7d162d62c7eda02672631)  
 
 ・一覧表示機能  
 トップページにアクセスすると、これまで投稿された本が表示されます。  
